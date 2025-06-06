@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>STUD AI - AI-Powered Freelancing & Automation</title>
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link href="css/color-switcher-design.css" rel="stylesheet">
+	<link id="theme-color-file" href="css/color-themes/default-color.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<style>
+		/* Ensure uniform card sizes and prevent overflow */
+		.solutions-one__single,
+		.testimonial-one__single {
+			min-height: 400px;
+			max-height: 400px;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			transition: transform 0.3s ease;
+		}
+
+		.solutions-one__text,
+		.testimonial-one__text {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+		}
+
+		/* Hover animation for AI Agents cards */
+		.solutions-one__single:hover {
+			transform: scale(1.05);
+		}
+
+		/* Style for unavailable agent */
+		.agent-unavailable {
+			opacity: 0.6;
+			position: relative;
+		}
+
+		.agent-unavailable::after {
+			content: "Coming Soon";
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background: #ff4d4d;
+			color: white;
+			padding: 5px 10px;
+			border-radius: 5px;
+			font-size: 12px;
+		}
+	</style>
+</head>
+
+<body class="body-bg-color">
+	<div class="page-wrapper">
+		<!-- Preloader -->
+		<div class="preloader"></div>
+		<!-- Cursor -->
+		<div class="cursor"></div>
+		<div class="cursor-follower"></div>
+
+		<!-- Main Header -->
+		<header class="main-header main-header-one">
+			<div class="header-lower">
+				<div class="main-menu__wrapper">
+					<div class="inner-container d-flex align-items-center justify-content-between">
+						<div class="main-header-one__logo-box">
+							<a href="index.html"><img src="images/resource/logo-1.png" alt="STUD AI Logo"></a>
+						</div>
+						<div class="nav-outer">
+							<nav class="main-menu show navbar-expand-md">
+								<div class="navbar-header">
+									<button class="navbar-toggler" type="button" data-toggle="collapse"
+										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+										aria-expanded="false" aria-label="Toggle navigation">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+									<ul class="navigation clearfix">
+
+										<li><a href="index.html">Home</a></li>
+										<li><a href="about.html">About</a></li>
+										<li><a href="Ai agents.html">AI Agents</a></li>
+										<li><a href="freelance.html">Freelancers</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+						<div class="outer-box d-flex align-items-center">
+							<ul class="main-header__login-sing-up">
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Sign Up</a></li>
+							</ul>
+							<div class="mobile-nav-toggler">
+								<span class="icon-menu"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-menu">
+				<div class="menu-backdrop"></div>
+				<div class="close-btn"><span class="icon far fa-times fa-fw"></span></div>
+				<nav class="menu-box">
+					<div class="nav-logo"><a href="index.html"><img src="images/logo-2.png" alt="" title=""></a></div>
+					<div class="menu-outer"></div>
+				</nav>
+			</div>
+		</header>
+		<!-- End Main Header -->
+
+		<!-- Hero Section -->
+		<section class="feature-one" id="home">
+			<div class="container">
+				<div class="feature-one__inner">
+					<div class="feature-one__color-overly-1 flaot-bob-y"></div>
+					<div class="feature-one__color-overly-2 flaot-bob-x"></div>
+					<div class="feature-one__color-overly-3 img-bounce"></div>
+					<h2 class="feature-one__title mb-4">Revolutionize Your Work with <br> AI Agents & <span>Expert
+							Freelancers</span></h2>
+					<p class="feature-one__text" style="font-size: 17px; text-align: center;  margin-bottom: 25px;">
+						AI-Powered Freelancing and Automation Platform — Get tasks done faster, smarter, and more
+						affordably.</p>
+					<div class="feature-one__btn-box">
+						<a href="#ai-agents" class="thm-btn feature-one__btn " style="margin-right: 15px;"> <i
+								class="fal fa-plus"></i> Meet Our AI Agents</a>
+						<a href="#freelancers" class="thm-btn feature-one__btn"> <i class="fal fa-plus"></i> Hire Human
+							Freelancers</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<!-- <section class="solutions-one">
+			<div class="container">
+				<div class="section-title text-center">
+					<div class="section-title__tagline-box">
+						<span class="section-title__tagline" style="font-size: 20px; font-weight: 600;">Our
+							Features</span>
+					</div>
+					<h2 class="section-title__title">Powerful Tools to Streamline Your Workflow</h2>
+				</div>
+				<div class="solutions-one__carousel owl-carousel owl-theme thm-owl__carousel" data-owl-options='{
+                    "loop": true, "autoplay": true, "margin": 24, "nav": false, "dots": false, "smartSpeed": 500, "autoplayTimeout": 10000,
+                    "responsive": { "0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}, "1350": {"items": 4} }
+                }'>
+					<div class="item">
+						<div class="solutions-one__single">
+							<div class="solutions-one__icon">
+								<img src="images/icons/ai-content-writing.png" alt="">
+							</div>
+							<h4 class="solutions-one__title"><a href="#ai-agents">AI Agents Available 24/7</a></h4>
+							<p class="solutions-two__content-one-text-1" style="font-size: 14px; font-weight: 500;">Our
+								AI agents operate non-stop, delivering instant results across time zones. From content
+								creation to data analysis, they ensure unmatched efficiency for your tasks.</p>
+							<a href="#ai-agents" class="solutions-one__btn">Explore More <i
+									class="fas fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="solutions-one__single">
+							<div class="solutions-one__icon">
+								<img src="images/icons/ai-chat.png" alt="">
+							</div>
+							<h4 class="solutions-one__title"><a href="#freelancers">Human Freelancers</a></h4>
+							<p class="solutions-two__content-one-text-1">Access a global network of vetted freelancers
+								for tailored projects. Whether it’s design or development, our experts deliver
+								high-quality, customized outcomes.</p>
+							<a href="#freelancers" class="solutions-one__btn">Explore More <i
+									class="fas fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="solutions-one__single">
+							<div class="solutions-one__icon">
+								<img src="images/icons/ai-code.png" alt="">
+							</div>
+							<h4 class="solutions-one__title"><a href="#how-it-works">Real-Time Task Tracking</a></h4>
+							<p class="solutions-two__content-one-text-1">Monitor project progress with live updates for
+								full transparency. Stay in control with detailed insights into task status and
+								milestones.</p>
+							<a href="#how-it-works" class="solutions-one__btn">Explore More <i
+									class="fas fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="solutions-one__single">
+							<div class="solutions-one__icon">
+								<img src="images/icons/ai-audio.png" alt="">
+							</div>
+							<h4 class="solutions-one__title"><a href="#how-it-works">Seamless Payment Integration</a>
+							</h4>
+							<p class="solutions-two__content-one-text-2">Secure payments with multiple methods for easy
+								transactions. Our platform ensures safe, hassle-free payments for all your projects.</p>
+							<a href="#how-it-works" class="solutions-one__btn">Explore More <i
+									class="fas fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<!-- About Us Section -->
+		<section class="solutions-two" id="about">
+			<div class="container">
+				<div class="section-title text-center">
+					<div class="section-title__tagline-box">
+						<!-- <span class="section-title__tagline">About STUD AI</span> -->
+					</div>
+					<h2 class="section-title__title">Redefining Task Automation and Talent Access</h2>
+				</div>
+				<div class="solutions-two__content-one wow fadeInUp" data-wow-delay="100ms">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6">
+							<div class="solutions-two__content-one-left">
+								<div class="solutions-two__content-one-title-box">
+									<h3>About STUD AI</h3>
+								</div>
+								<p class="solutions-two__content-one-text-1">STUD AI is an AI-powered freelancing and
+									automation platform designed to redefine how tasks are accomplished. By merging
+									powerful AI agents with a curated network of skilled human freelancers, STUD AI
+									provides a flexible, scalable solution for individuals and businesses.</p>
+								<p class="solutions-two__content-one-text-1">Our mission is to make intelligent task
+									automation and talent access simple and effective. Whether it's creating compelling
+									content, building resumes, or managing complex projects, our AI agents deliver
+									instant results. For tasks requiring a human touch, our vetted freelance
+									professionals are just a click away.</p>
+								<p class="solutions-two__content-one-text-1">With STUD AI, innovation meets execution —
+									on demand, empowering you to achieve more with less effort.</p>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6">
+							<div class="solutions-two__content-one-right">
+								<div class="solutions-two__content-one-img-box">
+									<div class="solutions-two__content-one-img">
+										<img src="images/resource/ai stud 1.jpeg"
+											alt="About STUD AI">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- AI Agents Section -->
+		<section class="solutions-one" id="ai-agents">
+			<div class="container">
+				<div class="section-title text-center">
+					<div class="section-title__tagline-box">
+						<span class="section-title__tagline" style="font-size: 20px;font-weight: 600;">Meet Our AI
+							Agents</span>
+					</div>
+					<h2 class="section-title__title">Smart Solutions for Your Tasks</h2>
+				</div>
+				<div class="solutions-one__carousel owl-carousel owl-theme thm-owl__carousel" data-owl-options='{
+                    "loop": true, "autoplay": true, "margin": 24, "nav": false, "dots": false, "smartSpeed": 500, "autoplayTimeout": 10000,
+                    "responsive": { "0": {"items": 1}, "768": {"items": 2}, "992": {"items": 3}, "1350": {"items": 3} }
+                }'>
+					<div class="item">
+						<div class="solutions-one__single">
+							<div class="solutions-one__icon">
+								<img src="images/icons/ai-content-writing.png" alt="">
+							</div>
+							<h4 class="solutions-one__title" style="color: #007bff;">Content Generator Agent</h4>
+							<p style="font-size: 15px; margin-bottom: 5px;">Create SEO-optimized content instantly for
+								blogs, ads, and social media. Supports over 50 content types, including email campaigns
+								and product descriptions. Customize tone and style to match your brand. Boost your
+								online visibility with multilingual support.</p>
+							<a href="#content-generator" class="solutions-one__btn">Try Now <i
+									class="fas fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="solutions-one__single">
+							<div class="solutions-one__icon">
+								<img src="images/icons/ai-speech.png" alt="">
+							</div>
+							<h4 class="solutions-one__title" style="color: #28a745;">Resume Builder Agent</h4>
+							<p style="font-size: 15px; margin-bottom: 5px;">Generate tailored, professional resumes and
+								cover letters in seconds. Ideal for job applications, career coaching, and LinkedIn
+								profiles. Supports multiple formats and industries. Helps job seekers stand out with
+								polished, ATS-friendly documents.</p>
+							<a href="#free-trial" class="solutions-one__btn">Try Now <i
+									class="fas fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="solutions-one__single agent-unavailable">
+							<div class="solutions-one__icon">
+								<img src="images/icons/ai-video.png" alt="">
+							</div>
+							<h4 class="solutions-one__title" style="color: #fd7e14;">Video Editor Agent</h4>
+							<p style="font-size: 15px; margin-bottom: 5px;">Automatically edit and enhance videos
+								(Coming Soon). Create promotional videos, tutorials, and social media clips
+								effortlessly. Features AI-driven transitions and effects. Perfect for marketers and
+								content creators (Available soon).</p>
+							<a href="#free-trial" class="solutions-one__btn" style="pointer-events: none;">Coming Soon
+								<i class="fas fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="feature-one__btn-box text-center">
+					<a href="#free-trial" class="thm-btn feature-one__btn" style="margin-top: 25px;"> <i
+							class="fal fa-plus"></i> Try AI Agents Now</a>
+				</div> -->
+			</div>
+		</section>
+
+		<!-- Content Generator Section -->
+		<section class="solutions-two" id="content-generator">
+			<div class="container">
+				<div class="section-title text-center">
+					<div class="section-title__tagline-box">
+						<span class="section-title__tagline">Content Generator Agent</span>
+					</div>
+					<h2 class="section-title__title">Create Compelling Content Instantly</h2>
+				</div>
+				<div class="solutions-two__content-one wow fadeInUp" data-wow-delay="100ms">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6">
+							<div class="solutions-two__content-one-left">
+								<div class="solutions-two__content-one-title-box">
+									<h3>Content Generator Agent</h3>
+								</div>
+								<p class="solutions-two__content-one-text-1">Our Content Generator Agent leverages
+									advanced AI to produce high-quality, engaging content tailored to your needs. From
+									blog posts to ad copy, it delivers professional results in seconds.</p>
+								<ul class="solutions-two__content-one-points">
+									<li>
+										<div class="icon">
+											<i class="fal fa-check"></i>
+										</div>
+										<div class="text">
+											<p>Supports over 50 content types, including articles, social media posts,
+												and product descriptions.</p>
+										</div>
+									</li>
+									<li>
+										<div class="icon">
+											<i class="fal fa-check"></i>
+										</div>
+										<div class="text">
+											<p>Customizable tone and style to match your brand voice.</p>
+										</div>
+									</li>
+									<li>
+										<div class="icon">
+											<i class="fal fa-check"></i>
+										</div>
+										<div class="text">
+											<p>SEO-optimized content to boost your online visibility.</p>
+										</div>
+									</li>
+									<li>
+										<div class="icon">
+											<i class="fal fa-check"></i>
+										</div>
+										<div class="text">
+											<p>Multilingual support for global audiences.</p>
+										</div>
+									</li>
+								</ul>
+								<!-- <div class="solutions-two__content-one-btn-box">
+									<a href="#free-trial" class="thm-btn solutions-two__content-one-btn"> <i
+											class="fal fa-plus"></i> Try Content Generator</a>
+								</div> -->
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6">
+							<div class="solutions-two__content-one-right">
+								<div class="solutions-two__content-one-img-box">
+									<div class="solutions-two__content-one-img">
+										<img src="images/resource/ai content.jpeg"
+											alt="Content Generator">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Freelancers Section -->
+		<section class="testimonial-one" id="freelancers">
+			<div class="container">
+				<div class="section-title text-center">
+					<div class="section-title__tagline-box">
+						<span class="section-title__tagline">Hire Human Freelancers</span>
+					</div>
+					<h2 class="section-title__title">Skilled Freelancers Ready to Help</h2>
+				</div>
+				<div class="row">
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="testimonial-one__single">
+							<div class="testimonial-one__client-info">
+								<div class="testimonial-one__client-img">
+									<img src="images/resource/testimonial-1-1.jpg" alt="">
+								</div>
+								<div class="testimonial-one__name-box">
+									<h3 class="testimonial-one__name">Content Writing</h3>
+									<p class="testimonial-one__sub-title">Expert Writers</p>
+								</div>
+							</div>
+							<p class="testimonial-one__text">Hire professional writers for blogs, articles, and
+								marketing content tailored to your brand.</p>
+							<!-- <div class="testimonial-one__icon-and-ratting">
+								<a href="#free-trial" class="thm-btn">Hire Now</a>
+							</div> -->
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="testimonial-one__single">
+							<div class="testimonial-one__client-info">
+								<div class="testimonial-one__client-img">
+									<img src="images/resource/testimonial-1-2.jpg" alt="">
+								</div>
+								<div class="testimonial-one__name-box">
+									<h3 class="testimonial-one__name">Graphic Design</h3>
+									<p class="testimonial-one__sub-title">Creative Designers</p>
+								</div>
+							</div>
+							<p class="testimonial-one__text">Get stunning visuals, logos, and branding materials from
+								talented designers.</p>
+							<!-- <div class="testimonial-one__icon-and-ratting">
+								<a href="#free-trial" class="thm-btn">Hire Now</a>
+							</div> -->
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="testimonial-one__single">
+							<div class="testimonial-one__client-info">
+								<div class="testimonial-one__client-img">
+									<img src="images/resource/testimonial-1-3.jpg" alt="">
+								</div>
+								<div class="testimonial-one__name-box">
+									<h3 class="testimonial-one__name">Web Development</h3>
+									<p class="testimonial-one__sub-title">Skilled Developers</p>
+								</div>
+							</div>
+							<p class="testimonial-one__text">Build responsive, high-performance websites with our expert
+								developers.</p>
+							<!-- <div class="testimonial-one__icon-and-ratting">
+								<a href="#free-trial" class="thm-btn">Hire Now</a>
+							</div> -->
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="testimonial-one__single">
+							<div class="testimonial-one__client-info">
+								<div class="testimonial-one__client-img">
+									<img src="images/resource/testimonial-1-4.jpg" alt="">
+								</div>
+								<div class="testimonial-one__name-box">
+									<h3 class="testimonial-one__name">Marketing & SEO</h3>
+									<p class="testimonial-one__sub-title">Digital Experts</p>
+								</div>
+							</div>
+							<p class="testimonial-one__text">Boost your online presence with SEO and marketing
+								strategies from specialists.</p>
+							<!-- <div class="testimonial-one__icon-and-ratting">
+								<a href="#free-trial" class="thm-btn">Hire Now</a>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- How It Works Section -->
+		<section class="solutions-one" id="how-it-works">
+			<div class="container">
+				<div class="section-title text-center">
+					<div class="section-title__tagline-box">
+						<span class="section-title__tagline" style="font-size: 20px; font-weight: 600;">How It
+							Works</span>
+					</div>
+					<h2 class="section-title__title">Get Started in Just a Few Steps</h2>
+				</div>
+				<div class="row">
+					<div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+						<div class="solutions-one__single wow fadeInUp" data-wow-delay="100ms">
+							<div class="solutions-one__icon">
+								<img src="images/icons/ai-chat.png" alt="">
+							</div>
+							<h4 class="solutions-one__title" style="color: #007bff;">1. Choose an AI Agent or Freelancer
+							</h4>
+							<p class="" style="font-size: 15px; font-weight: 500;">Select from advanced AI agents or
+								vetted freelancers to perfectly match your project needs. Explore a variety of expertise
+								for tasks like content creation or web development.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+						<div class="solutions-one__single wow fadeInUp" data-wow-delay="200ms">
+							<div class="solutions-one__icon">
+								<img src="images/icons/ai-content-writing.png" alt="">
+							</div>
+							<h4 class="solutions-one__title" style="color: #28a745;">2. Describe Your Task</h4>
+							<!-- <p class="solutions-one__text" style="font-size: 15px; font-weight: 500;">Provide detailed requirements to ensure precise delivery. Clear instructions help our AI or freelancers meet your expectations efficiently.</p> -->
+							<p style="font-size: 15px; font-weight: 500;">Provide detailed requirements to ensure
+								precise delivery. Clear instructions help our AI or freelancers meet your expectations
+								efficiently.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+						<div class="solutions-one__single wow fadeInUp" data-wow-delay="300ms">
+							<div class="solutions-one__icon">
+								<img src="images/icons/ai-code.png" alt="">
+							</div>
+							<h4 class="solutions-one__title" style="color: #6f42c1;">3. Get Results</h4>
+							<p style="font-size: 15px; font-weight: 500;">Receive instant AI-generated outputs or
+								completed freelancer work within deadlines. Enjoy high-quality results tailored to your
+								specifications.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+						<div class="solutions-one__single wow fadeInUp" data-wow-delay="400ms">
+							<div class="solutions-one__icon">
+								<img src="images/icons/ai-audio.png" alt="">
+							</div>
+							<h4 class="solutions-one__title" style="color: #fd7e14;">4. Pay Securely & Leave Feedback
+							</h4>
+							<p style="font-size: 15px; font-weight: 500;">Use our secure payment system with multiple
+								options. Provide feedback to improve our platform and ensure top-quality service.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Free Trial Section -->
+		<section class="free-trail" id="free-trial">
+			<div class="container">
+				<div class="free-trail__wrap">
+					<div class="free-trail__shape-3"
+						style="background-image: url(images/shapes/free-trail-shape-3.png);"></div>
+					<div class="free-trail__shape-1 float-bob-x"></div>
+					<div class="free-trail__start-1 zoominout">
+						<img src="images/shapes/free-trail-start-1.png" alt="">
+					</div>
+					<div class="free-trail__start-2 float-bob-y">
+						<img src="images/shapes/free-trail-start-2.png" alt="">
+					</div>
+					<div class="free-trail__start-3 float-bob-x">
+						<img src="images/shapes/free-trail-start-3.png" alt="">
+					</div>
+					<div class="free-trail__start-4 zoominout">
+						<img src="images/shapes/free-trail-start-4.png" alt="">
+					</div>
+					<div class="free-trail__inner">
+						<div class="section-title text-center">
+							<!-- <div class="section-title__tagline-box">
+								<span class="section-title__tagline">14 Day’s Free Trial</span>
+							</div> -->
+							<h2 class="section-title__title">Experience STUD AI for Free</h2>
+						</div>
+						<p class="free-trail__text">Try our AI agents and freelancer services with no commitment. Start
+							automating tasks and accessing top talent today! <br> No Credit Card Required.</p>
+						<div class="free-trail__btn-box">
+							<!-- <a href="#free-trial" class="thm-btn-two free-trail__btn">Get Started Free <i
+									class="icon-up-right-arrow"></i></a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			<div class="main-footer__shape-1 img-bounce"></div>
+			<div class="main-footer__top">
+		
+				<div class="container">
+					<div class="site-footer__social">
+						<a href="#" class="icons"><i class="icon-social-1"></i></a>
+						<a href="#" class="icons"><i class="icon-social-2"></i></a>
+						<a href="#" class="icons"><i class="icon-social-3"></i></a>
+						<a href="#" class="icons"><i class="icon-social-4"></i></a>
+						<a href="#" class="icons"><i class="icon-social-5"></i></a>
+					</div>
+		
+					<div class="site-footer__social">
+						<a href="index.html">Home |</a>
+						<a href="about.html">About |</a>
+						<a href="Ai agents.html">AI Agents |</a>
+						<a href="Freelance.html">Freelancers |</a>
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+		
+		
+			</div>
+			<div class="main-footer__bottom">
+				<div class="container">
+					<div class="main-footer__bottom-inner">
+						<p class="main-footer__bottom-text">Copyright © 2025 STUD AI. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scroll To Top -->
+		<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fas fa-arrow-up fa-fw"></span></div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/01-bootstrap.min.js"></script>
+		<script src="js/02-bootstrap-select.min.js"></script>
+		<script src="js/03-color-settings.js"></script>
+		<script src="js/04-owl.js"></script>
+		<script src="js/05-jarallax.min.js"></script>
+		<script src="js/06-isotope.js"></script>
+		<script src="js/07-wow.js"></script>
+		<script src="js/08-validate.js"></script>
+		<script src="js/09-appear.js"></script>
+		<script src="js/10-swiper.min.js"></script>
+		<script src="js/11-jquery.easing.min.js"></script>
+		<script src="js/12-gsap.min.js"></script>
+		<script src="js/13-odometer.js"></script>
+		<script src="js/14-tilt.jquery.min.js"></script>
+		<script src="js/15-magnific-popup.min.js"></script>
+		<script src="js/16-jquery-ui.js"></script>
+		<script src="js/17-marquee.min.js"></script>
+		<script src="js/18-jquery.circleType.js"></script>
+		<script src="js/19-jquery.lettering.min.js"></script>
+		<script src="js/script.js"></script>
+	</div>
+</body>
+
+</html>

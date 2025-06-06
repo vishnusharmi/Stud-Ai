@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from marveltheme.com/tf/html/aimug/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Apr 2025 13:29:14 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Aimug - Artificial Intelligence HTML-5 Template</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+
+    <!--Color Switcher Mockup-->
+    <link href="css/color-switcher-design.css" rel="stylesheet">
+    <!-- Color Themes -->
+    <link id="theme-color-file" href="css/color-themes/default-color.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+
+    <style>
+        /* Cards Container */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual Card */
+        .card {
+            background: var(--thm-body-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #dbd2d2;
+        }
+
+        .card-desc {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .use-cases {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .use-cases span {
+            background: #f0f0f0;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .card-features {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #d9cdcd;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .explore-btn {
+            display: inline-block;
+            background: rgb(95, 95, 220);
+            color: rgb(192, 188, 188);
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .explore-btn:hover {
+            box-shadow: #15152c transform: translateY(-2px);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .cards {
+                gap: 25px;
+            }
+
+            .card {
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .card-content {
+                padding: 20px;
+            }
+
+            .card-title {
+                font-size: 20px;
+            }
+
+            .explore-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="body-bg-color">
+
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+        <!-- End Preloader -->
+
+        <!-- Cursor -->
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
+        <!-- Cursor End -->
+
+
+
+
+        <!-- Main Header -->
+        <header class="main-header main-header-one">
+
+            <!-- Header Lower -->
+            <div class="header-lower">
+
+                <div class="main-menu__wrapper">
+                    <div class="inner-container d-flex align-items-center justify-content-between">
+
+                        <!-- Logo Box -->
+                        <div class="main-header-one__logo-box">
+                            <a href="index.html"><img src="images/resource/logo-1.png" alt=""></a>
+                        </div>
+
+                        <div class="nav-outer">
+
+                            <!-- Main Menu -->
+                            <nav class="main-menu show navbar-expand-md">
+                                <div class="navbar-header">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+                                    
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="Ai agents.html">AI Agents</a></li>
+                                        <li><a href="Freelance.html">Freelancers</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                            </nav>
+                            <!-- Main Menu End-->
+
+                        </div>
+
+                        <!-- Outer Box -->
+                        <div class="outer-box d-flex align-items-center">
+
+                            <ul class="main-header__login-sing-up">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Sign Up</a></li>
+                            </ul>
+
+                            <!-- Mobile Navigation Toggler -->
+                            <div class="mobile-nav-toggler">
+                                <span class="icon-menu"></span>
+                            </div>
+
+                        </div>
+                        <!-- End Outer Box -->
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Header Lower -->
+
+            <!-- Mobile Menu  -->
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <div class="close-btn"><span class="icon far fa-times fa-fw"></span></div>
+                <nav class="menu-box">
+                    <div class="nav-logo"><a href="index.html"><img src="images/logo-2.png" alt="" title=""></a></div>
+                    <!-- Search -->
+                    <div class="search-box">
+                        <form method="post" action="https://marveltheme.com/tf/html/aimug/contact.html">
+                            <div class="form-group">
+                                <input type="search" name="search-field" value="" placeholder="SEARCH HERE" required>
+                                <button type="submit"><span class="icon far fa-search fa-fw"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="menu-outer">
+                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                    </div>
+                </nav>
+            </div>
+            <!-- End Mobile Menu -->
+        </header>
+        <!-- End Main Header -->
+
+        <!-- Copywriting Tool Start -->
+        <section class="copywriting-tool">
+            <div class="container">
+                <div class="copywriting-tool__inner">
+                    <div class="copywriting-tool__title-box">
+                        <h2 class="copywriting-tool__title wow fadeInUp" data-wow-delay="100ms">Our <span>AI
+                                Solutions</span>
+                            <div></div>
+                         
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copywriting Tool End -->
+
+        <!-- How Tool Work Start -->
+
+        <div class="cards">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/736x/97/e8/dd/97e8ddb09a792b66c7853a9fa8c92806.jpg"
+                        alt="Content Generator" />
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Content Generator</div>
+                    <div class="card-desc">Generate blog posts, ads, and content instantly with smart AI algorithms.
+                    </div>
+                    <div class="use-cases">
+                        <span>Blog</span><span>Ad Copy</span><span>SEO</span>
+                    </div>
+                    <!-- <div class="card-features">
+
+                        <div>50+ ideas</div>
+                    </div>
+                    <a class="explore-btn" href="./content.html">Explore Tool →</a> -->
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/736x/86/8b/ed/868bedd4750e662f8268a0116dd17fc1.jpg"
+                        alt="Resume Builder" />
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Resume Builder</div>
+                    <div class="card-desc">Craft professional resumes tailored to your dream jobs in seconds.</div>
+                    <div class="use-cases">
+                        <span>Job Seeker</span><span>ATS Friendly</span>
+                    </div>
+                    <!-- <div class="card-features">
+
+                        <div>30+ templates</div>
+                    </div>
+                    <a class="explore-btn" href="./Resume .html">Explore Tool →</a> -->
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/736x/21/30/ff/2130ff42aaf9e52f5b27b2573a4034bc.jpg"
+                        alt="Freelancer Assistant" />
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Freelancer Assistant</div>
+                    <div class="card-desc">Manage projects, clients, and create proposals faster with AI help.</div>
+                    <div class="use-cases">
+                        <span>Proposals</span><span>CRM</span><span>Time Tracking</span>
+                    </div>
+                    <!-- <div class="card-features">
+
+                        <div>10+ Tools</div>
+                    </div>
+                    <a class="explore-btn" href="./Freelancer.html">Explore Tool →</a> -->
+                </div>
+            </div>
+        </div>
+        <!-- How Tool Work End -->
+        <!-- Core Feature Start-->
+        <section class="core-feature">
+            <div class="container">
+                <div class="section-title text-center">
+                    <div class="section-title__tagline-box">
+                        <span class="section-title__tagline">Core Features</span>
+                    </div>
+                    <h2 class="section-title__title">Generative AI Designed for creators. Make <br> your Life Easier
+                        with <span>STUD AI</span> </h2>
+                </div>
+                <div class="core-feature__content-one">
+                    <div class="core-feature__shape-1"
+                        style="background-image: url(images/shapes/core-feature-shape-1.png);"></div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="core-feature__content-one-left">
+                                <div class="core-feature__content-one-title-box">
+                                    <p>Feature 1: AI-Powered Content Generation</p>
+                                    <h3>Write ✍️ Smarter, Not Harder – Elevate Your Content .</h3>
+                                </div>
+                                <p class="core-feature__content-one-text">Mastering the Art of AI Content Writing:
+                                    Unleash Creativity at Scale.<br>
+                                    Why Choose Our AI Content Generator?</p>
+                                <ul class="core-feature__content-one-points">
+                                    <li>
+                                        <div class="icon">
+                                            <i class="icon-check"></i>
+                                        </div>
+                                        <div class="text">
+                                            <p><span>60+ </span> Ready-to-Use Templates & Use Cases – From SEO blogs to
+                                                product descriptions, we’ve got you covered.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="icon-check"></i>
+                                        </div>
+                                        <div class="text">
+                                            <p> Human-Like Tone & Emotion – Connect with your audience naturally,
+                                                whether witty, professional, or heartfelt.</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="icon">
+                                            <i class="icon-check"></i>
+                                        </div>
+                                        <div class="text">
+                                            <p> SEO-Optimized & Plagiarism-Free – Boost rankings with content tailored
+                                                for search engines.</p>
+                                        </div>
+                                    </li>
+
+
+
+
+                                    <li>
+                                        <div class="icon">
+                                            <i class="icon-check"></i>
+                                        </div>
+                                        <div class="text">
+                                            <p> One-Click Generation – No more staring at a blank page; get polished
+                                                drafts instantly.
+
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+
+
+                                <!-- <div class="core-feature__content-one__btn-box">
+                                    <a href="contact.html" class="thm-btn-two core-feature__content-one-btn">Get Started
+                                        <i class="icon-next"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 wow fadeInRight" data-wow-delay="100ms">
+                            <div class="core-feature__content-one-right">
+                                <div class="core-feature__content-one-img-box">
+                                    <div class="core-feature__content-one-img">
+                                        <img src="images/resource/ContentGeneration.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="core-feature__content-two">
+                    <div class="core-feature__shape-1"
+                        style="background-image: url(images/shapes/core-feature-shape-1.png);"></div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+                            <div class="core-feature__content-two-left">
+                                <div class="core-feature__content-two-img-box">
+                                    <div class="core-feature__content-two-img">
+                                        <img src="images/resource/resume.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="core-feature__content-two-right">
+                                <div class="core-feature__content-two-title-box">
+                                    <p>Feature 2: Resume Builder AI</p>
+                                    <h3>AI-powered platform that generates professional, tailored resumes in seconds
+                                        with ATS optimization.
+
+
+                                    </h3>
+                                </div>
+                                <ul class="core-feature__content-one-points">
+                                    <li>
+                                        <div class="icon">
+                                            <i class="icon-check"></i>
+                                        </div>
+                                        <div class="text">
+                                            <p>Professionally Designed Templates - From executive resumes to entry-level
+                                                CVs, we cover all industries and career levels.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="icon-check"></i>
+                                        </div>
+                                        <div class="text">
+                                            <p>ATS-Optimized & Recruiter-Approved - Beat applicant tracking systems with
+                                                perfectly formatted, keyword-rich resumes that get noticed.</p>
+                                        </div>
+                                    </li>
+
+
+
+                                </ul>
+                                <!-- <div class="core-feature__content-two__btn-box">
+                                    <a href="contact.html" class="thm-btn-two core-feature__content-two-btn">Get Started
+                                        <i class="icon-next"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="core-feature__content-one core-feature__content-one--three">
+                    <div class="core-feature__shape-1"
+                        style="background-image: url(images/shapes/core-feature-shape-1.png);"></div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="core-feature__content-one-left">
+                                <div class="core-feature__content-one-title-box">
+                                    <p>Feature 3: AI Freelancer</p>
+                                    <h3>Your all-in-one AI assistant to streamline projects, wow clients, and grow your
+                                        freelance business</h3>
+                                </div>
+                                <p class="core-feature__content-one-text">
+                                    AI-Driven Task Automation – Automate repetitive tasks with 95% accuracy, saving 10+
+                                    hours/week.</p>
+                                <ul class="core-feature__content-one-points">
+                                    <li>
+                                        <div class="icon">
+                                            <i class="icon-check"></i>
+                                        </div>
+                                        <div class="text">
+                                            <p>Real-Time Performance Analytics – Get instant insights into productivity,
+                                                bottlenecks, and efficiency gains.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="icon-check"></i>
+                                        </div>
+                                        <div class="text">
+                                            <p> Smart Resource Allocation – Optimize workforce distribution based on
+                                                real-time demand and skill sets.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- <div class="core-feature__content-one__btn-box">
+                                    <a href="contact.html" class="thm-btn-two core-feature__content-one-btn">Get Started
+                                        <i class="icon-next"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 wow fadeInRight" data-wow-delay="100ms">
+                            <div class="core-feature__content-one-right">
+                                <div class="core-feature__content-one-img-box">
+                                    <div class="core-feature__content-one-img">
+                                        <img src="images/resource/Freelancer.jpeg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="free-trail">
+            <div class="container">
+                <div class="free-trail__wrap">
+                    <div class="free-trail__shape-3"
+                        style="background-image: url(images/shapes/free-trail-shape-3.png);"></div>
+                    <div class="free-trail__shape-1 float-bob-x"></div>
+                    <div class="free-trail__start-1 zoominout">
+                        <img src="images/shapes/free-trail-start-1.png" alt="">
+                    </div>
+                    <div class="free-trail__start-2 float-bob-y">
+                        <img src="images/shapes/free-trail-start-2.png" alt="">
+                    </div>
+                    <div class="free-trail__start-3 float-bob-x">
+                        <img src="images/shapes/free-trail-start-3.png" alt="">
+                    </div>
+                    <div class="free-trail__start-4 zoominout">
+                        <img src="images/shapes/free-trail-start-4.png" alt="">
+                    </div>
+                    <div class="free-trail__inner">
+                        <div class="section-title text-center">
+                            <div class="section-title__tagline-box">
+                                <span class="section-title__tagline">Get perfect results—faster and smarter than ever
+                                    beforel</span>
+                            </div>
+                            <h2 class="section-title__title">Be part of the future of STUD AI Let’s <br> Create
+                                Something
+                            </h2>
+                        </div>
+
+                        <div class="free-trail__btn-box">
+                            <a href="contact.html" class="thm-btn-two free-trail__btn">Get Started Free <i
+                                    class="icon-up-right-arrow"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Free Trail End -->
+
+        <!-- Main Footer Start -->
+        <footer class="main-footer">
+            <div class="main-footer__shape-1 img-bounce"></div>
+            <div class="main-footer__top">
+        
+                <div class="container">
+                    <div class="site-footer__social">
+                        <a href="#" class="icons"><i class="icon-social-1"></i></a>
+                        <a href="#" class="icons"><i class="icon-social-2"></i></a>
+                        <a href="#" class="icons"><i class="icon-social-3"></i></a>
+                        <a href="#" class="icons"><i class="icon-social-4"></i></a>
+                        <a href="#" class="icons"><i class="icon-social-5"></i></a>
+                    </div>
+        
+                    <div class="site-footer__social">
+                        <a href="index.html">Home |</a>
+                        <a href="about.html">About |</a>
+                        <a href="Ai agents.html">AI Agents |</a>
+                        <a href="Freelance.html">Freelancers |</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+        
+        
+            </div>
+            <div class="main-footer__bottom">
+                <div class="container">
+                    <div class="main-footer__bottom-inner">
+                        <p class="main-footer__bottom-text">Copyright © 2025 STUD AI. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Main Footer End -->
+
+
+
+
+
+
+        <!-- Color Palate / Color Switcher -->
+        <div class="color-palate">
+            <!-- <div class="color-trigger">
+                <i class="fas fa-cog fa-fw"></i>
+            </div> -->
+            <div class="color-palate-inner">
+                <div class="color-palate-head">
+                    <h6>Choose Options</h6>
+                </div>
+                <!-- Colors -->
+                <div class="various-color clearfix">
+                    <h6>Multiple Colors</h6><br>
+                    <div class="colors-list">
+                        <span class="palate default-color active"
+                            data-theme-file="css/color-themes/default-color.css"></span>
+                        <span class="palate blue-color" data-theme-file="css/color-themes/blue-color.css"></span>
+                        <span class="palate brown-color" data-theme-file="css/color-themes/brown-color.css"></span>
+                        <span class="palate green-color" data-theme-file="css/color-themes/green-color.css"></span>
+                        <span class="palate orange-color" data-theme-file="css/color-themes/orange-color.css"></span>
+                        <span class="palate purple-color" data-theme-file="css/color-themes/purple-color.css"></span>
+                        <span class="palate teal-color" data-theme-file="css/color-themes/teal-color.css"></span>
+                        <span class="palate yellow-color" data-theme-file="css/color-themes/yellow-color.css"></span>
+                    </div>
+                </div>
+                <h6>RTL Version</h6>
+                <ul class="rtl-version option-box">
+                    <li class="rtl">RTL Version</li>
+                    <li>LTR Version</li>
+                </ul>
+                <h6>Boxed Version</h6>
+                <ul class="box-version option-box">
+                    <li class="box">Boxed</li>
+                    <li>Full width</li>
+                </ul>
+                <h6>Want Sticky Header</h6>
+                <ul class="header-version option-box">
+                    <li class="box">No</li>
+                    <li>Yes</li>
+                </ul>
+                <h6>Dark Verion</h6>
+                <ul class="dark-version option-box">
+                    <li class="box">Yes</li>
+                    <li>No</li>
+                </ul>
+                <div class="purchase-box">
+                    You will find much more options for colors and styling in admin panel. This color picker is used
+                    only for demonstation purposes.
+                    <a href="#" class="theme-btn btn-style-two">
+                        <span class="btn-wrap">
+                            <span class="text-one">buy now</span>
+                            <span class="text-two">buy now</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Color Palate / Color Switcher -->
+
+        <!-- Search Popup -->
+        <div class="search-popup">
+            <div class="color-layer"></div>
+            <button class="close-search"><span class="far fa-times fa-fw"></span></button>
+            <form method="post" action="https://marveltheme.com/tf/html/aimug/blog.html">
+                <div class="form-group">
+                    <input type="search" name="search-field" value="" placeholder="Search Here" required="">
+                    <button type="submit"><i class="far fa-search fa-fw"></i></button>
+                </div>
+            </form>
+        </div>
+        <!-- End Search Popup -->
+
+    </div>
+    <!-- End PageWrapper -->
+
+    <!-- Scroll To Top -->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fas fa-arrow-up fa-fw"></span></div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/01-bootstrap.min.js"></script>
+    <script src="js/02-bootstrap-select.min.js"></script>
+    <script src="js/03-color-settings.js"></script>
+    <script src="js/04-owl.js"></script>
+    <script src="js/05-jarallax.min.js"></script>
+    <script src="js/06-isotope.js"></script>
+    <script src="js/07-wow.js"></script>
+    <script src="js/08-validate.js"></script>
+    <script src="js/09-appear.js"></script>
+    <script src="js/10-swiper.min.js"></script>
+    <script src="js/11-jquery.easing.min.js"></script>
+    <script src="js/12-gsap.min.js"></script>
+    <script src="js/13-odometer.js"></script>
+    <script src="js/14-tilt.jquery.min.js"></script>
+    <script src="js/15-magnific-popup.min.js"></script>
+    <script src="js/16-jquery-ui.js"></script>
+    <script src="js/17-marquee.min.js"></script>
+    <script src="js/18-jquery.circleType.js"></script>
+    <script src="js/19-jquery.lettering.min.js"></script>
+
+
+
+    <script src="js/script.js"></script>
+
+
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+</body>
+
+
+<!-- Mirrored from marveltheme.com/tf/html/aimug/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Apr 2025 13:29:19 GMT -->
+
+</html>
